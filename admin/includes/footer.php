@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>NACOSS</b>
+      <b>NACOS</b>
     </div>
-    <strong> &copy; 2020 Brought To You By<a href="#"> NACOSS ELCOM COMMITEE 2020</a></strong>
+    <strong> &copy; 2024 Brought To You By<a href="#"> NACOS 2024</a></strong>
 </footer>

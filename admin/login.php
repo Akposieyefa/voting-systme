@@ -26,7 +26,6 @@
 	else{
 		$_SESSION['error'] = 'Input admin credentials first';
 	}
-
 	header('location: index.php');
 
 ?>

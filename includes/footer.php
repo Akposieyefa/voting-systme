@@ -3,7 +3,7 @@
       <div class="pull-right hidden-xs">
         <b>NACOSS</b>
       </div>
-      <strong> &copy; 2020 Brought To You By<a href="#"> NACOSS ELCOM COMMITEE 2020</a></strong>
+      <strong> &copy; 2023 Brought To You By<a href="#"> Federal University Oye Ekiti  2023</a></strong>
     </div>
     <!-- /.container -->
 </footer>

@@ -12,12 +12,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   	<div class="login-logo">
-  		<strong>NACOSS NATIONAL ELECTION (2020)</strong>
+  		<strong>NACOS 2024</strong>
   	</div>
-  
+
   	<div class="login-box-body">
 	  <div class="col-4 mx-auto text-center">
-      <img src="../images/logo1.png" class="mx-auto d-block" width="50px">
+      <img src="../images/logo.jpg" class="mx-auto d-block" width="50px">
     </div>
     	<p class="login-box-msg">Sign in to start your session</p>
 
@@ -34,22 +34,38 @@
     			<div class="col-xs-4">
           			<button type="submit" class="btn btn-primary btn-block btn-flat" name="login"><i class="fa fa-sign-in"></i> Sign In</button>
         		</div>
+				<div class="col-xs-4 col-offset-xs-4">
+					<a href="#addnew" data-toggle="modal" class="btn btn-primary btn-flat"><i class="fa fa-plus"></i> Sign Up</a>
+				</div>
       		</div>
     	</form>
   	</div>
-  	<?php
-  		if(isset($_SESSION['error'])){
-  			echo "
-  				<div class='callout callout-danger text-center mt20'>
-			  		<p>".$_SESSION['error']."</p> 
-			  	</div>
-  			";
-  			unset($_SESSION['error']);
-  		}
-  	?>
+	  <?php
+        if(isset($_SESSION['error'])){
+          echo "
+            <div class='alert alert-danger alert-dismissible'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+              <h4><i class='icon fa fa-warning'></i> Error!</h4>
+              ".$_SESSION['error']."
+            </div>
+          ";
+          unset($_SESSION['error']);
+        }
+        if(isset($_SESSION['success'])){
+          echo "
+            <div class='alert alert-success alert-dismissible'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+              <h4><i class='icon fa fa-check'></i> Success!</h4>
+              ".$_SESSION['success']."
+            </div>
+          ";
+          unset($_SESSION['success']);
+        }
+      ?>
 </div>
 	
 <?php include 'includes/scripts.php' ?>
+<?php include 'includes/voters_modal.php'; ?>
 </body>
 
 <footer>
